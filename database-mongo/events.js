@@ -93,8 +93,8 @@ const addAComment = (id, comment) => {
 };
 
 const findNearestEvent = (req, fetched) => {
-  var lat = req.body.lat || fetched[1];
-  var lng = req.body.lng || fetched[0];
+  var lat = req.body.lat || fetched[0];
+  var lng = req.body.lng || fetched[1];
   var maxDistance = parseFloat(req.body.maxDistance) || 10000;
   var category = req.body.category;
 
